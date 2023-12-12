@@ -1,0 +1,66 @@
+.box {
+  width: 100%;
+  height: 100vh;
+  background-color: #ed2939;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: intro 0.8s ease-out 2s forwards;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.title > div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.title__item__one {
+  animation: titleAnimate 0.4s ease-out 0.4s;
+}
+
+.title__item__two {
+  animation: titleAnimate 0.6s ease-out 0.8s;
+}
+
+.title__item__three {
+  animation: titleAnimate 0.6s ease-out 1.4s;
+}
+
+.clearIntro {
+  display: none;
+}
+
+/* time line aniamtion intro */
+@keyframes intro {
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes titleAnimate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

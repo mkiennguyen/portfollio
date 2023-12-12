@@ -1,0 +1,85 @@
+.form {
+  display: flex;
+  align-items: center;
+  height: 60rem;
+  background-color: #ebebeb;
+  margin: 10rem 0 0;
+}
+
+.info {
+  width: 45%;
+  padding: 3rem;
+}
+
+.info__title {
+  font-size: 4.8rem;
+  line-height: 1;
+  text-align: center;
+  color: var(--bg);
+}
+.info__subTitle {
+  margin: 1.8rem 0 0;
+  color: #656462;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+/* */
+
+.imageBox {
+  width: 55%;
+  height: 100%;
+}
+
+.imageBox__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(100% 0%, 100% 61%, 100% 100%, 25% 100%, 0 100%, 13% 0);
+}
+
+/* */
+
+.socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem 0 0;
+}
+
+.social {
+  width: 46%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0.5rem;
+  transition: all 0.2s ease-out;
+}
+.social:hover {
+  opacity: 0.8;
+}
+
+.social__icon {
+  margin: 0 1rem 0 0;
+}
+
+.github {
+  background-color: var(--bg);
+}
+
+.facebook {
+  background-color: #0866ff;
+}
+
+.gmail {
+  background-color: white;
+  color: var(--text-color-black);
+}
+
+.discord {
+  background-color: #5865f2;
+}

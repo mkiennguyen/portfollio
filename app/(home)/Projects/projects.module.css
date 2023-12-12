@@ -1,0 +1,37 @@
+.container {
+  max-width: 115rem;
+  background: radial-gradient(
+    70.71% 70.71% at 50% 50%,
+    rgba(245, 78, 66, 0.2) 0,
+    rgba(10, 10, 10, 0) 75%,
+    rgba(10, 10, 10, 0) 100%
+  );
+  margin: 0 auto;
+  padding: 5rem 3rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 0 3.5rem 0.5rem;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.3s ease-out;
+}
+
+.card {
+  padding: 0.8rem;
+  width: 50%;
+  height: 22rem;
+  min-width: 46%;
+  /* flex-grow: 1; */
+}
+
+.no__project {
+  font-size: 1.6rem;
+  text-align: center;
+}

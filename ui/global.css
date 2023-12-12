@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --text-color: #f9f9f9;
+  --text-color-black: #393939;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 500;
+  background-color: var(--bg);
+  color: var(--text-color);
+  max-width: 132.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+input {
+  font-weight: 500;
+  color: var(--bg);
+  background-color: transparent;
+  outline: none;
+  font-family: inherit;
+}
+
+::selection {
+  background-color: #ed2939;
+  color: var(--text-color);
+  text-shadow: none;
+}

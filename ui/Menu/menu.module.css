@@ -1,0 +1,53 @@
+.menu {
+}
+
+.menuBtn {
+  border-radius: 1.5rem;
+  background-color: #ed2939;
+  padding: 1rem;
+  position: fixed;
+  left: 1.8rem;
+  top: 1.8rem;
+  z-index: 3;
+  display: flex;
+}
+
+.menuBtn__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--text-color);
+}
+
+.menuIntro__item {
+  display: block;
+  font-weight: 900;
+  font-size: 8rem;
+  padding: 1rem 0;
+  transition: 0.3s ease-out;
+  opacity: 0;
+  letter-spacing: 0.8rem;
+  color: var(--text-color-black);
+  text-align: center;
+}
+
+.menuIntro__item:hover {
+  transform: translateY(-0.8rem);
+}
+
+.menuIntro__item:nth-child(1) {
+  animation: animateItem 0.5s ease-in-out 0.8s forwards;
+}
+
+.menuIntro__item:nth-child(2) {
+  animation: animateItem 0.5s ease-in-out 1s forwards;
+}
+
+.menuIntro__item:nth-child(3) {
+  animation: animateItem 0.5s ease-in-out 1.2s forwards;
+}
+
+@keyframes animateItem {
+  100% {
+    opacity: 1;
+  }
+}

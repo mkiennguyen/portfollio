@@ -1,0 +1,14 @@
+.container {
+  background-color: #252423;
+  color: #8a8887;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}

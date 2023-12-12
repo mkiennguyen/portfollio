@@ -1,0 +1,113 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.intro {
+}
+
+.avatar {
+  height: 14rem;
+  width: 14rem;
+  animation: animateAvatar 0.5s linear 3s forwards;
+  opacity: 0;
+  transform: scale(0);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 3rem rgba(255, 152, 55, 0.4);
+}
+
+.container > div:nth-child(1):active {
+  transform: scale(0.96);
+}
+.avatar__img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  width: 50rem;
+}
+
+@keyframes animateAvatar {
+  60% {
+    opacity: 0.6;
+    transform: scale(0.6);
+  }
+  80% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+  90% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.info {
+  padding: 1.8rem;
+  border-radius: 1rem;
+  background-color: var(--text-color);
+  color: var(--text-color-black);
+  position: absolute;
+  position: 2;
+  top: 50%;
+  left: 50%;
+  width: 50rem;
+  box-shadow: 0 0.5rem 3rem rgba(255, 152, 55, 0.4);
+  transition: all 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.info__title {
+  font-size: 2rem !important;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.info > div {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.user__title,
+.personal.role,
+.age__title,
+.address__title,
+.role__title {
+  padding: 0.8rem 1.5rem;
+  background-color: rgb(235, 235, 235);
+  border-radius: 0.8rem;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 1rem 0 0;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+.closeBtn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.8rem !important;
+  background-color: rgb(235, 235, 235);
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 3rem rgba(221, 221, 221, 0.2);
+}
